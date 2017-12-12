@@ -113,6 +113,13 @@ def run_test_swap_colors():
 
 
 def swap_colors(circle, rectangle):
+    x = circle.fill_color
+    circle.fill_color = rectangle.fill_color
+    rectangle.fill_color = x
+
+
+
+
     """
     What comes in:
       -- An rg.Circle.
